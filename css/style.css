@@ -72,7 +72,7 @@ h4:hover {
 code,
 pre {
     background-color: #333;
-    color: #86c232;
+    color: #fff;
     padding: 10px;
 }
 
@@ -105,7 +105,7 @@ pre {
 
 .navbar a:hover {
     /* Underline effect on hovering*/
-    border-bottom: 2px #86 solid;
+    border-bottom: 2px #86c232 solid;
 }
 
 .navbar .flex {
@@ -529,8 +529,8 @@ section {
     }
     .navbar ul {
         padding: 10px;
-        background-color: rgba(10, 0, 0, 0.1);
-        border-radius: 10px
+        background-color: rgba(134, 194, 50, 1.1);
+        border-radius: 10px;
     }
     .languages {
         /*the contacts on the cantact me page*/
