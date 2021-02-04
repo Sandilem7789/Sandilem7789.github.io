@@ -138,7 +138,7 @@ window.addEventListener("resize",
         canvas.width = innerWidth;
         canvas.height = innerHeight;
         mouse.radius = ((canvas.height / 80) * (canvas.width / 80));
-        particleArray[100].color = "black";
+        particleArray[10].color = "black";
         console.log(particleArray[1].color);
         init();
     });

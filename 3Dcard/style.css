@@ -1,0 +1,133 @@
+/* 
+    Created on : 29 Oct 2020, 2:47:16 PM
+    Author     : Sandile
+*/
+*{                                                                              /* Star means all: every element*/
+    margin: 0;                                                                  /*setting the margin*/
+    padding: 0;                                                                 /*the padding*/
+    box-sizing: border-box;                                                     /*not sure about this one*/
+}
+
+body{                                                                           /*body element: where everything is*/
+    font-family: sans-serif;                                                    /*setting the font*/
+    min-height: 100vh;                                                          /*the minimum height: vh means viewport height*/
+    display: flex;                                                              /*the kind of display*/
+    align-items: center;                                                        /*centering eveything*/
+    justify-content: center;                                                    /*making sure its centered*/
+    perspective: 1000px;                                                        /*how far we want to view the body from, 100px is closer, 2000px is further*/
+}
+
+.container{                                                                     /*class container*/
+    width: 50%;                                                                 /*width of the container the container that contains the card*/
+    display: flex;                                                              /*flexible display, i think*/
+    justify-content: center;                                                    /*centering the container*/
+    align-content: center;                                                      /*aligning the cont of the container*/
+    border-radius: 50px;                                                        /*rounded corners: this wont show since the container is set to be invisible*/
+}
+
+.card{                                                                          /*class card*/
+    transform-style: preserve-3d;                                               /*this the 3d effect: glad to know this spell*/
+    min-height: 80vh;                                                           /*minimum height: vh means viewport height*/
+    height: 70%;                                                                /*setting the height of the card*/
+    width: 35rem;                                                               /*setting the width of the card*/
+    border-radius: 30px;                                                        /*rounding the corners: the bigger the value is the more round the corners are*/
+    padding: 0rem 5rem;                                                         /*padding top and bottom = 0rem, padding left and right = 5rem*/
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);/*setting the shadows around the card and the colors of the shadows*/
+    background: whitesmoke;                                                     /*background color of the card*/
+}
+
+.sneaker{                                                                       /*class sneaker*/
+    min-height: 35vh;                                                           /*minimum height*/
+    display: flex;                                                              /*flexible diplay: its not fixed*/
+    align-items: center;                                                        /*put it on the center*/
+    justify-content: center;                                                    /*center the sneaker*/
+}
+
+.sneaker img{                                                                   /*class sneaker and the image of the sneaker*/
+    width: 20rem;                                                               /*setting the size of the sneaker because it is big: we can manipulate this thru JS when a user presses a certain size*/
+    z-index: 2;                                                                 /*the z-index is for setting veiwership hierachy, the bigger the value the more forward the item is. used when there are overlapping element or images*/
+    transition: all 1.5s ease-out;                                              /*the speed at which transitions happen and the type of transition*/
+}
+
+.circle{                                                                        /*calss circle*/
+    width: 1rem;                                                                /*basically hidding the cirlce*/
+    height: 1rem;                                                               /*very small*/
+    background: linear-gradient(                                                /*setting the color of the circle: gradient allow for multiple colors*/
+        to right,                                                               /*the direction of the gradient*/
+        rgba(245, 70, 66, 0.75),                                                /*the first color*/
+        rgba(8, 83, 156, 0.75)                                                  /*the second color*/
+    );
+    position: absolute;                                                         /*positioning attribute of the circle: fixed, relative, this one is absolute*/
+    border-radius: 30px;                                                        /*rounding the edges*/
+    z-index: 1;                                                                 /*putting the circle behing the sneaker by sstiing a lower z-index value compared to thast of the sneaker*/
+    margin-top: 2px;                                                            /*setting a 2px space between the circle and the edge of the circle*/
+    transition: all 0.75s ease-in-out;                                          /*the speed at which transitions happen: and the kind of transition*/
+}
+
+.info h1{                                                                       /*class info where the HTML tag is h1*/
+    font-size: 3rem;                                                            /*setting the size of the font*/
+    transition: all 0.75s ease-out;                                             /*the speed at which transitisions occur and the type of transition*/
+}
+
+.info h3{                                                                       /*class info where the HTML tag is h3*/
+    font-size: 1.3rem;                                                          /*setting the font size*/
+    padding: 2rem 0rem;                                                         /*top and bottom padding: 2rem, left and right padding is 0rem*/
+    color: #585858;                                                             /*setting the color to a greyish color*/
+    font-weight: lighter;                                                       /*setting the fiont weight to be lighter: it can also be dset to be bolder*/
+    transition: all 0.75s ease-out;                                             /*setting the rate at which transitions occur*/
+}
+
+.sizes{                                                                         /*class sizes*/
+    display: flex;                                                              /*flexible display*/
+    justify-content: space-between;                                             /*put spaces between buttons, or rather between elements contained by this class*/
+    transition: all 0.75s ease-out;                                             /*the rate at which transitions occur and the type of transition*/
+    justify-content: center;
+}
+
+.sizes button{                                                                  /*class sizes where the HTML tag is button*/
+    padding: 0.5rem 2rem;                                                       /*top and bottom padding: 0.5rem, left and right padding is 2rem*/
+    background: none;                                                           /*no background: meaning it is transparent it will take the color of the its container if there is a color at set*/
+    border: none;                                                               /*no border*/
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);                                /*setting the shadow of the button*/
+    border-radius: 10px;                                                        /*rounding the edges of the button*/
+    cursor: pointer;                                                            /*when the cursor is in the vicinity of the button it changes into a pointer*/
+    font-weight: bold;                                                          /*setting the font weight*/
+    color: #585858;                                                             /*the color of the font buttons is grey like the discription*/
+    transition: all 0.75s ease-out;                                             /*the rate at which transitions occur*/
+    margin-right: 8px;                                                          /*increasing the space in between buttons*/
+}
+
+.sizes button:hover{                                                            /*class sizes where the are buttons, upon hovering*/
+    background: #585858;                                                        /*change the background to this color*/
+    color: white;                                                               /*and the fon to this color*/
+    font-size: 25px;                                                            /*set the size of the font to this size*/
+    transition: all 0.1s ease-out;                                              /*duration of the transition*/
+    transform: translateY(-5px);                                                /*move the button up just a little bit*/
+}
+
+.purchase{                                                                      /*purchase class*/
+    margin-top: 5rem;                                                           /*the space above the purchase button*/
+    transition: all 0.75s ease-out;                                             /*trnsitions duration and the transition type*/
+}
+
+.purchase button{                                                               /*purchase button */
+    width: 100%;                                                                /*width of the button*/
+    padding: 1rem 0rem;                                                         /*top and bottom padding: 1rem, left and right padding 0rem*/
+    margin-bottom: 60px;                                                        /*space btween the bottom of the button and the bottom part of the card*/
+    background: #f54642;                                                        /*background color of the background*/
+    color: white;                                                               /*color of the font*/
+    border: none;                                                               /*no border*/
+    cursor: pointer;                                                            /*when the pointer is on top of this button it becomes a pointer*/
+    font-weight: bolder;                                                        /*the weight of the font*/
+    border-radius: 10px;                                                        /*rounding the corners*/
+    transition: all 0.75s ease-out;                                             /*the transition duration an the type of transition*/
+    font-size: 30px;                                                            /*font size*/
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);                                /*the shadow of the button*/
+}
+
+.purchase button:hover{                                                         /*upon hovering the button */
+    transition: all 0.2s ease-in-out;                                           /*transition instance*/
+    font-size: 50px;                                                            /*increase the size to 50px*/
+    border-radius: 20px;                                                        /*make the buttons more roundded*/
+    box-shadow: 0px 5px 10px rgba(100, 20, 10, 1.9);                            /*increase the intensity of the shadow*/
+}
