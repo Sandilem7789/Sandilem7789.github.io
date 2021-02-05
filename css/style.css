@@ -1,19 +1,25 @@
 /* 
     Created on : 16 Dec 2020, 1:57:39 PM
-    Author     : Sandile
+    Author     : Sandilem7789
 */
 
 
 /* css variables/properties */
 
-/*Previous primary color: #047aed*/
+/* Previous Colors: 
+ * primary color: #047aed
+ * secondary color: #1c3fa8
+ * dark color: #002240
+ * light color: #f4f4f4 
+ * success color: #5cb85c
+ * error color: #d9534f*/
 
 :root {
     --primary-color: #222629;
     --secondary-color: #1c3fa8;
     --dark-color: #002240;
-    --light-color: #f4f4f4;
-    --success-color: #5cb85c;
+    --light-color: #61892f;
+    --success-color: #86c232;
     --error-color: #d9534f;
 }
 
@@ -105,7 +111,11 @@ pre {
 
 .navbar a:hover {
     /* Underline effect on hovering*/
-    border-bottom: 2px #86c232 solid;
+    border-bottom: 2px var(--success-color  ) solid;
+    background-color: var(--success-color);
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-weight: bolder;
 }
 
 .navbar .flex {
@@ -334,7 +344,7 @@ pre {
     font-size: 18px;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    /*transition: transform 1.2s ease-in;*/
+    transition: transform 1.2s ease-in;
 }
 
 .docs-main nav li:hover {
@@ -372,6 +382,7 @@ section {
 
 .docs-head {
     margin-top: -1%;
+    padding-top: 10%; /* Space between things i do and navigation bar*/
 }
 
 
@@ -513,7 +524,7 @@ section {
 
 /* Mobile */
 
-@media(max-width: 540px) {
+@media(max-width: 624px) {
     .logo {
         text-align: center;
         font-size: 180%;
@@ -533,7 +544,7 @@ section {
         border-radius: 10px;
     }
     .languages {
-        /*the contacts on the cantact me page*/
+        /*the contacts on the contact me page*/
         width: 250px;
     }
     .docs-main .grid>*:first-child,
@@ -571,13 +582,31 @@ section {
     }
 }
 
-@media(max-width: 325px) {
+@media(max-width: 335px) {
     .logo {
         height: 20px;
     }
     .navbar {
-        height: 135px;
-        padding-top: 10px
+        height: 25%; /*Space between name and Nav Br on xtra small screens*/
+        padding-top: 5%
+    }
+
+    .docs-head {
+        padding-top: 30%;
+    }
+
+    footer h1 {
+        font-size: 70%;
+    }
+}
+
+@media(max-width: 225px) {
+    .logo {
+        height: 25%;
+    }
+    .navbar {
+        height: 20%;
+        font-size: 68%;
     }
     footer h1 {
         font-size: 70%;
