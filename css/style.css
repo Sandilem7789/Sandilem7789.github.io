@@ -45,6 +45,10 @@ a {
     color: #333;
 }
 
+.links {
+    color: indigo;
+}
+
 h1,
 h2 {
     font-weight: 300;
