@@ -119,7 +119,8 @@ pre {
 }
 
 .navbar .flex {
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    gap: 4vh;
 }
 
 .navbar .container .logo {
@@ -598,7 +599,7 @@ section {
     }
     .navbar {
         height: 28vh; /*Space between name and Nav Br on xtra small screens*/
-        padding-top: 5%
+        padding-top: 2vh
     }
 
     .docs-head {
@@ -615,7 +616,7 @@ section {
         height: 25%;
     }
     .navbar {
-        height: 20%;
+        height: 20vh;
         font-size: 68%;
     }
     footer h1 {
