@@ -120,7 +120,7 @@ pre {
 
 .navbar .flex {
     justify-content: space-between;
-    gap: 4vh;
+    gap: 2vh;
 }
 
 .navbar .container .logo {
