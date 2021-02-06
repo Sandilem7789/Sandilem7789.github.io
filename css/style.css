@@ -611,6 +611,14 @@ section {
     }
 }
 
+@media(max-width: 333px) {
+    .logo {
+        
+        font-size: 165%;
+        margin-bottom: 1vh;
+    }
+}
+
 @media(max-width: 225px) {
     .logo {
         height: 25%;
