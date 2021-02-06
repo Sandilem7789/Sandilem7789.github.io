@@ -103,7 +103,7 @@ function connect() { //this is the connecting line between particles
 function init() {
     particleArray = [];
     let numberOfParticles = (canvas.height * canvas.width) / 6500;
-    console.log(numberOfParticles);
+    //console.log(numberOfParticles);
     for (let i = 0; i < numberOfParticles * 1.5; i++) {
         let size = (Math.random() * 5) + 2;
 
@@ -139,7 +139,7 @@ window.addEventListener("resize",
         canvas.height = innerHeight;
         mouse.radius = ((canvas.height / 80) * (canvas.width / 80));
         particleArray[10].color = "black";
-        console.log(particleArray[1].color);
+        //console.log(particleArray[1].color);
         init();
     });
 

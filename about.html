@@ -1,97 +1,86 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Sandile Mathenjwa | About Me</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/utilities.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/client.js"></script>
-</head>
+    <head>
+        <title>Sandile Mathenjwa | About Me</title>
+        <meta charset="UTF-8" name="theme-color" content="#222629">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./css/utilities.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/client.js"></script>
+    </head>
 
-<body>
-    <!--Nav Bar-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">Sandile Mathenjwa</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/contacts.html">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <!-- Head -->
-    <section class="docs-head bg-primary py-3">
-        <div class="container grid" style="padding-top: 3vh ;">
-            <div>
-                <p class="lead">
-                    Web Developer | Content Creator | Music Producer
-                </p>
-            </div>
-            <br>
-            <img id="headshot" src="./img/HEAD.jpg" alt="Headshot.jpg">
-        </div>
-    </section>
-
-    <!-- Docs Main -->
-    <section class="docs-main my-4">
-        <div class="container grid">
-            <div class="card bg-light p-3" id="nav2nd">
+    <body>
+        <!--Nav Bar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo">Sandile Mathenjwa</h1>
                 <nav>
-                    <ul>
-                        <li><a href="/projects.html">Projects</a></li>
-                        <li><a href="/contacts.html">Contact Me</a></li>
-                        <li><a href="#">My Digital CV</a></li>
-                        <li><a href="#">Freelance Pricing</a></li>
+                    <ul class="links" style="font-weight: bold;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="/contacts.html">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="card">
-                <h2>About Me</h2>
-                <p>
-                    Hi there, my name is Sandile. What do I do? I am a web developer. I mix creativity and logic and come up with solutions. I speak vanilla JavaScript and NodeJS, I am learning other accents of JavaScript as well.
-                    <br><br> I am what you might call a work in progress: I am always improving myself, that simply means I am never gonna be perfect and that means more creativity for me, My other endeavours include dabbling in music production and creating
-                    both educational as well as entertaining content on social media platforms.
-                    <div class="alert alert-success">
-                        <i class="fas fa-business-time"></i> I am available for freelance work.
-                    </div>
-                    <a href="#" class="btn btn-primary">Contact Me</a>
-            </div>
         </div>
-        <div class="container grid">
-            <div class="card" id="projects">
-                <h2></h2>
-            </div>
-            <div class="card" id="projects">
-                <h2>Projects</h2>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-dark py-1">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Sandile Mathenjwa</h1>
-                <p>Copyright &copy; 2021</p>
+        <!-- Head -->
+        <section class="docs-head bg-primary py-3" style="z-index: 100;">
+            <div class="container grid" style="padding-top: 3vh;">
+                <div>
+                    <p class="lead">
+                        Web Developer | Content Creator | Music Producer
+                    </p>
+                </div>
+                <br>
+                <img id="headshot" src="./img/HEAD.jpg" alt="Headshot.jpg">
             </div>
+        </section>
 
-            <div class="social">
-                <!-- font awesome social media icons,
+        <!-- Docs Main -->
+        <section class="docs-main my-4">
+            <div class="container grid">
+                <div class="card" style="z-index: -30;">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi there, my name is Sandile. What do I do? I am a web developer. I mix creativity and logic and come up with solutions. I speak vanilla JavaScript and NodeJS, I am learning other accents of JavaScript as well.
+                        <br><br> I am what you might call a work in progress: I am always improving myself, that simply means I am never gonna be perfect and that means more creativity for me, My other endeavours include dabbling in music production and creating
+                        both educational as well as entertaining content on social media platforms.
+                        <div class="alert alert-success">
+                            <i class="fas fa-business-time"></i> I am available for freelance work.
+                        </div>
+                        <a href="#" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+            <div class="container grid">
+                <div class="card" id="projects">
+                    <h2></h2>
+                </div>
+                <div class="card" id="projects">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer bg-dark py-1">
+            <div class="container grid grid-3">
+                <div>
+                    <h1>Sandile Mathenjwa</h1>
+                    <p>Copyright &copy; 2021</p>
+                </div>
+
+                <div class="social">
+                    <!-- font awesome social media icons,
                     you need internet connection for this : no u dont-->
-                <a href="https://github.com/sandilem7789"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://twitter.com/TheGreatSandile"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://github.com/sandilem7789"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/TheGreatSandile"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>

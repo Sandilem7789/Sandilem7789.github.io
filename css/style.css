@@ -45,10 +45,6 @@ a {
     color: #333;
 }
 
-.links {
-    color: indigo;
-}
-
 h1,
 h2 {
     font-weight: 300;
@@ -327,7 +323,7 @@ pre {
 }
 
 .docs-main .grid {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 4fr;     /*this is where we specify the number of boxes*/
     grid-template-rows: 2fr;
     align-items: flex-start;
 }
@@ -358,7 +354,6 @@ pre {
 
 .docs-head .container img:hover {
     border-radius: 110px;
-    z-index: 1;
 }
 
 
