@@ -597,7 +597,7 @@ section {
         height: 20px;
     }
     .navbar {
-        height: 25%; /*Space between name and Nav Br on xtra small screens*/
+        height: 25vh; /*Space between name and Nav Br on xtra small screens*/
         padding-top: 5%
     }
 
