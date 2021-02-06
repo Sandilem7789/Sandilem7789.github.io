@@ -536,7 +536,7 @@ section {
         padding-top: 16vh;
     }
     .navbar {
-        height: 110px;
+        height: 130px;
         margin-bottom: -1px;
         padding-bottom: 10px;
     }
@@ -587,11 +587,7 @@ section {
     }
 }
 
-@media (max-width: 492) {
-    .docs-head {
-        padding-top: 500%;
-    }
-}
+
 
 @media(max-width: 365px) {
     .logo {
