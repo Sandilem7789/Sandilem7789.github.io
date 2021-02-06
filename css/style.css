@@ -611,10 +611,10 @@ section {
     }
 }
 
-@media(max-width: 333px) {
+@media(max-width: 338px) {
     .logo {
         
-        font-size: 165%;
+        font-size: 145%;
         margin-bottom: 1vh;
     }
 }
