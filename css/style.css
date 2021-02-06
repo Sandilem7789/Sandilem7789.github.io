@@ -584,6 +584,9 @@ section {
         padding: 40px;
         animation: slideInFromRight 1.2s ease-in;
     }
+    .navbar .flex {
+        justify-content: unset;
+    }
 }
 
 
@@ -593,25 +596,30 @@ section {
         height: 20px;
     }
     .navbar {
-        height: 28vh; /*Space between name and Nav Br on xtra small screens*/
+        height: 20vh; /*Space between name and Nav Br on xtra small screens*/
         padding-top: 2vh
     }
 
     .docs-head {
-        padding-top: 25vh;
+        padding-top: 20vh;
     }
 
     footer h1 {
         font-size: 70%;
     }
+
+    .navbar .flex {
+        justify-content: unset;
+        gap: 1vh;
+    }
 }
 
 @media(max-width: 338px) {
     .logo {
-        
         font-size: 145%;
-        margin-bottom: 2.5vh;
+        margin-bottom: 2.9vh;
     }
+    
 }
 
 @media(max-width: 225px) {
