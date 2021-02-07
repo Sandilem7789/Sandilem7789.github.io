@@ -131,3 +131,11 @@ body{                                                                           
     border-radius: 20px;                                                        /*make the buttons more roundded*/
     box-shadow: 0px 5px 10px rgba(100, 20, 10, 1.9);                            /*increase the intensity of the shadow*/
 }
+
+@media (max-width: 604) {
+    .scale {
+        transform: scale(0.5);
+        width: 50%;
+        height: 50%;
+    }
+}
