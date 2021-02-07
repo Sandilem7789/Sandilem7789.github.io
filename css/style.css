@@ -336,7 +336,7 @@ pre {
 
 .projects-main .grid {
     /* The columns of the projects page */
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 2fr;
     align-items: flex-start;
 }
 
@@ -383,6 +383,22 @@ section {
 .docs-head {
     margin-top: -1%;
     padding-top: 10vh; /* Space between things i do and navigation bar*/
+}
+
+#colored-card {
+    background-color: #61892f;
+    color: white;
+}
+
+#colored-card2 {
+    background-color: var(--success-color);
+}
+
+.color-para {
+    color: #222629;
+}
+.proj-para {
+    font-weight: normal;
 }
 
 
@@ -586,6 +602,15 @@ section {
     }
     .navbar .flex {
         justify-content: unset;
+    }
+    .proj-para {
+        font-weight: lighter;
+    }
+    .container {
+        padding: 0px 0px;
+    }
+    #platform-game {
+        color: #fff;
     }
 }
 
