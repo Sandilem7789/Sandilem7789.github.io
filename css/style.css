@@ -401,6 +401,13 @@ section {
     font-weight: normal;
 }
 
+.odd-title {
+    border-bottom: rgba(88, 43, 43, 0.1) solid;
+    border-radius: 10px;
+    font-size: 150%;
+    width: 10%;
+}
+
 
 /* Footer */
 
