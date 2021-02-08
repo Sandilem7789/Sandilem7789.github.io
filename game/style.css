@@ -6,7 +6,7 @@ chapter 16: Platform Game
     Author     : Sandile  Mathenjwa
 */
 body{
-    background: rgb(50, 50, 50);
+    background: #222629;
 }
 .background{
     background: rgb(52, 166, 251);
@@ -57,4 +57,13 @@ body{
 
 #score {
     font-family: monospace;
+}
+
+@media(max-width: 400px) {
+    .game {
+        overflow: hidden;
+        max-width: 400px;
+        max-height: 250;
+        position: relative;
+    }
 }
