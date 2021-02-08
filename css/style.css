@@ -349,7 +349,7 @@ pre {
 }
 
 .docs-main nav li:hover {
-    border-bottom: #ccc solid;
+    border-bottom: #222629 solid;
 }
 
 .docs-head .container img:hover {
@@ -386,7 +386,7 @@ section {
 }
 
 #colored-card {
-    background-color: #61892f;
+    text-align: center;
     color: white;
 }
 
@@ -408,6 +408,13 @@ section {
     width: 10%;
 }
 
+strong:hover {
+    color: blueviolet;
+}
+
+#lonetitle {
+    text-align: center;
+}
 
 /* Footer */
 
@@ -438,7 +445,7 @@ section {
 }
 
 .source:hover {
-    color: var(--primary-color);
+    color: blueviolet;
 }
 
 .portfolio {
@@ -450,6 +457,10 @@ section {
 
 #portfolio {
     border-radius: 70px;
+}
+
+i:hover {
+    color: blueviolet;
 }
 
 
@@ -615,9 +626,6 @@ section {
     }
     .container {
         padding: 0px 0px;
-    }
-    #platform-game {
-        color: #fff;
     }
 }
 

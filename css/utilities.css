@@ -39,7 +39,7 @@
 
 .btn:hover {
     transform: scale(0.98);
-    font-size: 20px;
+    background-color: var(--success-color);
 }
 
 /* Backgrounds and Colored Buttons */
